@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD_cource</title>
+    <link rel="stylesheet" href="./bootstrap-5.3.1-dist/css/bootstrap.css">
+</head>
+<body>
+   <div class="container">
+
+    <div class="mb-3">
+        <label for="id"  class="form-label">ID</label>
+        <input type="text" readonly class="form-control" id="id">
+      </div>
+
+
+    <div class="mb-3">
+        <label for="Name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="Name">
+      </div>
+
+
+      <div class="mb-3">
+        <label for="finalmark" class="form-label">finalmark</label>
+        <input type="text" class="form-control" id="finalmark">
+      </div>
+
+
+      <div class="mb-3">
+        <label for="hours" class="form-label">hours</label>
+        <input type="text" class="form-control" id="hours" >
+      </div>
+
+
+
+ <div class="col-12">
+    <label for="inputState" class="form-label">Is Available</label>
+    <select class="form-select" id="available">
+      <option value="true">true</option>
+      <option value="false">false</option>
+   
+    </select>
+  </div>
+
+      <button type="button" onclick="save1()" class="btn btn-dark  m-5">Save</button>
+      <button type="button" onclick="queryProduct()" class="btn btn-dark  m-5">Quere</button>
+     
+    
+     
+
+
+    </div>
+
+    <table class="container table table-dark table-striped">
+        <thead>
+            <tr>
+                <th scope="col">name</th>
+                <th scope="col">finalmark</th>
+                <th scope="col">hours</th>
+                <th scope="col">Is Available</th>
+                <th scope="col">Delete</th>
+                <th scope="col">Update</th>
+
+               
+              </tr>
+        </thead>
+       <tbody id="tbody">
+        
+       </tbody>
+
+      </table>
+
+
+
+<script src="./bootstrap-5.3.1-dist/js/bootstrap.js"></script>
+<script type="module" src="script.js"></script>
+</body>
+</html>
